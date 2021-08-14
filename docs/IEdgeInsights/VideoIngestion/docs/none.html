@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>GVA (GStreamer Video Analytics) &mdash; EII Documentation v1.0 documentation</title>
+  <title>Generic Plugin &mdash; EII Documentation v1.0 documentation</title>
   
 
   
@@ -91,7 +91,6 @@
             
               <p class="caption"><span class="caption-text">INTRODUCTION:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../pages/legal.html">Legal Disclaimer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../pages/introduction.html">Introduction</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../pages/introduction.html#terminology">Terminology</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/introduction.html#general-terminology">General Terminology</a></li>
@@ -274,52 +273,76 @@
 <p class="caption"><span class="caption-text">VIDEO ANALYTICS PIPELINE:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../../pages/video.html">Working with Video Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#using-video-accelerators-in-ingestion-analytics-containers">Using video accelerators in ingestion/analytics containers</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#to-run-on-usb-devices"><strong>To run on USB devices</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#to-run-on-myriad-devices"><strong>To run on MYRIAD devices</strong></a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#to-run-on-hddl-devices"><strong>To run on HDDL devices</strong></a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#videoingestion-module">VideoIngestion Module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#ingestor-config">Ingestor config</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#video-ingestion-contents">Video Ingestion Contents</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#camera-configuration">Camera Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#rtsp-camera">RTSP Camera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#usb-camera">USB Camera</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#realsense-depth-camera">RealSense Depth Camera</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#configuration">Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#ingestor-config">Ingestor config</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#video-ingestion-contents">Video Ingestion Contents</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#videoanalytics-module">VideoAnalytics Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#videoanalytics-module">VideoAnalytics Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#id4">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#using-video-accelerators-in-ingestion-analytics-containers">Using video accelerators in ingestion/analytics containers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#user-defined-function-udf">User Defined Function (UDF)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#dependency-installation">Dependency Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#compilation">Compilation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#installation">Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#running-unit-tests">Running Unit Tests</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#udf-configuration">UDF Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#sample-udfs">Sample UDFs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#native-udfs">Native UDFs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#construction-of-metadata-in-udf">Construction of Metadata in UDF</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#chaining-of-udfs">Chaining of UDFs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#combination-of-udfs-with-ingestors">Combination of UDFs with ingestors</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#jupyter-notebook-pre-requisites">Jupyter Notebook pre-requisites</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#running-jupyter-notebook">Running Jupyter Notebook</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#creating-udf-in-jupyter-notebook">Creating UDF in Jupyter Notebook</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#eii-sample-udfs">EII Sample UDFs</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#udf-configuration">UDF Configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#gigeconfigtool-and-export-settings-from-basler-pylon-feature-system">GigEConfigTool and Export Settings from Basler Pylon Feature System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#discoverhistory">DiscoverHistory</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#native-visualizer-module">Native Visualizer Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#web-visualizer-module">Web Visualizer Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#udf-writing-guide">UDF Writing Guide</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#sample-udfs">Sample UDFs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#native-udfs">Native UDFs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#construction-of-metadata-in-udf">Construction of Metadata in UDF</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#chaining-of-udfs">Chaining of UDFs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#combination-of-udfs-with-ingestors">Combination of UDFs with ingestors</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#developing-python-udf-using-jupyter-notebook">Developing python UDF using Jupyter Notebook</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#jupyter-notebook-pre-requisites">Jupyter Notebook pre-requisites</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#running-jupyter-notebook">Running Jupyter Notebook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#creating-udf-in-jupyter-notebook">Creating UDF in Jupyter Notebook</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#native-visualizer-module">Native Visualizer Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#steps-to-build-and-run-visualizer">Steps to build and run visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#using-labels">Using Labels</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#metadata-structure">Metadata Structure</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#imagestore-module">ImageStore Module</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#detailed-description-on-each-of-the-keys-used">Detailed description on each of the keys used</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#web-visualizer-module">Web Visualizer Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#steps-to-build-and-run-web-visualizer">Steps to build and run web visualizer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#id39">Using Labels</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#id43">Metadata Structure</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#influxdbconnector-module">InfluxDBConnector Module</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#imagestore-module">ImageStore Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#id44">Configuration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../pages/video.html#detailed-description-on-each-of-the-keys-used">Detailed description on each of the keys used</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#influxdbconnector-module">InfluxDBConnector Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#id46">Configuration</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#gigeconfigtool-and-export-settings-from-basler-pylon-feature-system">GigEConfigTool and Export Settings from Basler Pylon Feature System</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#generating-pylon-feature-system-file-pfs">Generating Pylon Feature System File (PFS)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#executing-gigeconfig-tool">Executing GigEConfig Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/video.html#discoverhistory">DiscoverHistory</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#steps-to-build-and-run-discoverhistory-service">Steps to build and run DiscoverHistory service</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#list-of-sample-select-queries">List of sample select queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/video.html#to-run-the-tool-in-zmq-ipc-mode">To run the tool in zmq_ipc mode</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -512,14 +535,10 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../pages/sample.html">EII Samples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/sample.html#steps-to-run-eii-samples-apps">Steps to run EII samples apps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../../pages/sample.html#sample-cpp-app-for-eii-platform">Sample CPP APP for EII platform</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#short-description-of-app-containers">‘Short Description of App containers’</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#the-sample-golang-application-demonstrates-the-usage-of-eii-core-libraries-like-eiimessagebus-and-configmanager">The sample Golang application demonstrates the usage of EII core libraries like EIIMessageBus and ConfigManager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#id3">Short Description of App containers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#the-high-level-logical-flow-of-sample-app-is-as-below">The high level logical flow of Sample App is as below:</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#sample-python-app-for-eii-platform">Sample Python APP for EII platform</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#id4">Short Description of App containers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../pages/sample.html#steps-to-run-eii-samples-apps">Steps to run EII samples apps</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#sample-cpp-app-for-eii-platform">Sample CPP App for EII platform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#sample-golang-app-for-eii-platform">Sample Golang App for EII platform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../pages/sample.html#sample-python-app-for-eii-platform">Sample Python App for EII platform</a></li>
 </ul>
 </li>
 </ul>
@@ -584,7 +603,7 @@
     
       <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>GVA (GStreamer Video Analytics)</li>
+      <li><code class="docutils literal notranslate"><span class="pre">Generic</span> <span class="pre">Plugin</span></code></li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -605,88 +624,37 @@
             
   <p><strong>Contents</strong></p>
 <ul class="simple">
-<li><p><a class="reference external" href="http://localhost:7645/IEdgeInsights/VideoIngestion/docs/#gva-gstreamer-video-analytics">GVA (GStreamer Video Analytics)</a></p></li>
+<li><p><cite>``Generic Plugin`</cite> &lt;<a class="reference external" href="http://localhost:7645/IEdgeInsights/VideoIngestion/docs/#generic-plugin">http://localhost:7645/IEdgeInsights/VideoIngestion/docs/#generic-plugin</a>&gt;`_</p></li>
+<li><p><cite>``Adding new GigE camera support to VideoIngestion`</cite> &lt;<a class="reference external" href="http://localhost:7645/IEdgeInsights/VideoIngestion/docs/#adding-new-gige-camera-support-to-videoingestion">http://localhost:7645/IEdgeInsights/VideoIngestion/docs/#adding-new-gige-camera-support-to-videoingestion</a>&gt;`_</p></li>
 </ul>
-<div class="section" id="id1">
-<h1>GVA (GStreamer Video Analytics)<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<p>VI module supports the usage of GVA (Gstreamer Video Analytics) plugins with <code class="docutils literal notranslate"><span class="pre">gstreamer</span></code> ingestor. <a class="reference external" href="https://github.com/openvinotoolkit/dlstreamer_gst">GVA</a> is
-a collection of GStreamer elements to enable CNN model based video analytics capabilities (such as object detection, classification, recognition) in GStreamer framework.</p>
-<p><strong>Refer `CustomUdfs-GVASafetyGearIngestion &lt;https://github.com/open-edge-insights/eii-core/blob/master/CustomUdfs/GVASafetyGearIngestion/README.md&gt;`_ to refer GVA based CustomUdf container added for SafetyGear sample.</strong></p>
-<p>GVA use case configurations with different cameras:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Video</span> <span class="pre">File</span> <span class="pre">-</span> <span class="pre">Gstreamer</span> <span class="pre">ingestor</span> <span class="pre">with</span> <span class="pre">GVA</span> <span class="pre">elements</span></code></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```javascript
-{
-  &quot;type&quot;: &quot;gstreamer&quot;,
-  &quot;pipeline&quot;: &quot;multifilesrc loop=TRUE stop-index=0 location=./test_videos/&lt;VIDEO_FILE&gt; ! h264parse ! decodebin ! videoconvert ! video/x-raw,format=BGR ! gvadetect model=models/&lt;DETECTION_MODEL&gt; ! appsink&quot;
-}
-```
-
-**Note:** In case one needs to use GVA with a video file using multifilesrc element then copy the video file to [WORKDIR]/IEdgeInsights/VideoIngestion/test_videos and provide the location of the video file accordingly in the gstreamer pipeline.
+<div class="section" id="generic-plugin">
+<h1><code class="docutils literal notranslate"><span class="pre">Generic</span> <span class="pre">Plugin</span></code><a class="headerlink" href="#generic-plugin" title="Permalink to this headline">¶</a></h1>
+<p>Generic Plugin is a gstreamer generic source plugin that communicates and streams from a GenICam based camera which provides a GenTL producer. In order to use
+the generic plugin with VI one must install the respective GenICam camera SDK and make sure the compatible GenTL producer for the camera is installed.</p>
+<p><strong>Refer `src-gst-gencamsrc/README &lt;https://github.com/open-edge-insights/video-ingestion/blob/master/src-gst-gencamsrc/README&gt;`_ for Element Properties of Generic Plugin</strong>.</p>
+<div class="section" id="refer-src-gst-gencamsrc-readme-md-https-github-com-open-edge-insights-video-ingestion-blob-master-src-gst-gencamsrc-readme-md-for-more-information-on-generic-plugin">
+<h2><strong>Refer `src-gst-gencamsrc/README.md &lt;https://github.com/open-edge-insights/video-ingestion/blob/master/src-gst-gencamsrc/README.md&gt;`_ for more information on Generic Plugin</strong>.<a class="headerlink" href="#refer-src-gst-gencamsrc-readme-md-https-github-com-open-edge-insights-video-ingestion-blob-master-src-gst-gencamsrc-readme-md-for-more-information-on-generic-plugin" title="Permalink to this headline">¶</a></h2>
+<p><strong>For working with Genicam USB3 Vision camera please install the respective camera SDK by referring the below section</strong></p>
+</div>
+</div>
+<div class="section" id="adding-new-gige-camera-support-to-videoingestion">
+<h1><code class="docutils literal notranslate"><span class="pre">Adding</span> <span class="pre">new</span> <span class="pre">GigE</span> <span class="pre">camera</span> <span class="pre">support</span> <span class="pre">to</span> <span class="pre">VideoIngestion</span></code><a class="headerlink" href="#adding-new-gige-camera-support-to-videoingestion" title="Permalink to this headline">¶</a></h1>
+<p>In order to use the generic plugin with newer Genicam camera SDK follow the below steps:</p>
+<ol class="arabic simple">
+<li><p>Install the respective GenICam camera SDK by adding the camera SDK installation steps in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/Dockerfile">VI-Dockerfile</a>. The camera SDK will be installed during docker build and one can install multiple camera SDKs in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/Dockerfile">VI-Dockerfile</a>. Refer Dokerfile reference documentation (<a class="reference external" href="https://docs.docker.com/engine/reference/builder/">https://docs.docker.com/engine/reference/builder/</a>) for Dockerfile Instructions. Typically one would need to use <code class="docutils literal notranslate"><span class="pre">RUN</span> <span class="pre">&lt;command&gt;</span></code> instrcution to execute shell commands for installing newer camera sdk. In case the camera SDK cannot be downloaded in a non-interactive manner then one would need to place the camera SDK under <code class="docutils literal notranslate"><span class="pre">[WORKDIR]/IEdgeInsights/VideoIngestion/</span></code> directory, use the <code class="docutils literal notranslate"><span class="pre">COPY</span></code> instruction in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/Dockerfile">VI-Dockerfile</a> to use the camera SDK in the build context and then use the <code class="docutils literal notranslate"><span class="pre">RUN</span></code> instruction for installing the camera SDK during docker build.</p></li>
+<li><p>After making sure the compatible GenTL producer is successfully installed one must add a case statement in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/gentl_producer_env.sh">gentl_producer_env.sh</a> scipt to export the GenTL producer path to <code class="docutils literal notranslate"><span class="pre">GENICAM_GENTL64_PATH</span></code> env variable. In order to verify the GenTL producer path one can search for the <code class="docutils literal notranslate"><span class="pre">.cti</span></code> file under the installation path. Typically GenTL provider is characterized by a file with <code class="docutils literal notranslate"><span class="pre">.cti</span></code> extension. Path to cti library containing folder must be exported to env variable named <code class="docutils literal notranslate"><span class="pre">GENICAM_GENTL64_PATH</span></code> (<code class="docutils literal notranslate"><span class="pre">GENICAM_GENTL32_PATH</span></code> for 32 bit providers).</p></li>
+<li><p>Set <code class="docutils literal notranslate"><span class="pre">GENICAM</span></code> env variable in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/docker-compose.yml">docker-compose.yml</a> to execute the corresponding case statement in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/docker-compose.yml">docker-compose.yml</a> and export the GenTL producer path accordingly. GenTL producer path will be exported during docker runtime. Hence one can choose to add install multiple Genicam camera SDK during docker build and then switch between GenTL providers during docker runtime by modifying the <code class="docutils literal notranslate"><span class="pre">GENICAM</span></code> env variable in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/docker-compose.yml">docker-compose.yml</a>.</p></li>
+</ol>
+<p><strong>Refer the below snippet example to select ``Basler`` camera and export its GenTL producer path in `docker-compose.yml &lt;https://github.com/open-edge-insights/video-ingestion/blob/master/docker-compose.yml&gt;`_ assuming the corresponding Basler Camera SDK and GenTL producer is installed.</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ia_video_ingestion:
+...
+  environment:
+  ...
+  <span class="c1"># Setting GENICAM value to the respective camera which needs to be used</span>
+  GENICAM: <span class="s2">&quot;Basler&quot;</span>
 </pre></div>
 </div>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Generic</span> <span class="pre">Plugin</span> <span class="pre">-</span> <span class="pre">Gstreamer</span> <span class="pre">ingestor</span> <span class="pre">with</span> <span class="pre">GVA</span> <span class="pre">elements</span></code></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;gstreamer&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;pipeline&quot;</span><span class="o">:</span> <span class="s2">&quot;gencamsrc serial=&lt;DEVICE_SERIAL_NUMBER&gt; pixel-format=&lt;PIXEL_FORMAT&gt; ! vaapipostproc format=bgrx ! gvadetect model=models/&lt;DETECTION_MODEL&gt; ! videoconvert !  video/x-raw,format=BGR ! appsink&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">RTSP</span> <span class="pre">camera</span> <span class="pre">-</span> <span class="pre">Gstreamer</span> <span class="pre">ingestor</span> <span class="pre">with</span> <span class="pre">GVA</span> <span class="pre">elements</span></code></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;gstreamer&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;pipeline&quot;</span><span class="o">:</span> <span class="s2">&quot;rtspsrc location=\&quot;rtsp://&lt;USERNAME&gt;:&lt;PASSWORD&gt;@&lt;RTSP_CAMERA_IP&gt;:&lt;PORT&gt;/&lt;FEED&gt;\&quot; latency=100 ! rtph264depay ! h264parse ! vaapih264dec ! vaapipostproc format=bgrx ! gvadetect model=models/&lt;DETECTION_MODEL&gt; ! videoconvert ! video/x-raw,format=BGR ! appsink&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">USB</span> <span class="pre">camera</span> <span class="pre">-</span> <span class="pre">Gstreamer</span> <span class="pre">ingestor</span> <span class="pre">with</span> <span class="pre">GVA</span> <span class="pre">elements</span></code></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;gstreamer&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;pipeline&quot;</span><span class="o">:</span> <span class="s2">&quot;v4l2src ! decodebin ! videoconvert ! video/x-raw,format=BGR ! gvadetect model=models/&lt;DETECTION_MODEL&gt; ! appsink&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">RTSP</span> <span class="pre">simulated</span> <span class="pre">-</span> <span class="pre">Gstreamer</span> <span class="pre">ingestor</span> <span class="pre">with</span> <span class="pre">GVA</span> <span class="pre">elements</span></code></p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;gstreamer&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;pipeline&quot;</span><span class="o">:</span> <span class="s2">&quot;rtspsrc location=\&quot;rtsp://&lt;SOURCE_IP&gt;:&lt;PORT&gt;/&lt;FEED&gt;\&quot; latency=100 ! rtph264depay ! h264parse ! vaapih264dec ! vaapipostproc format=bgrx ! gvadetect model=models/&lt;DETECTION_MODEL&gt; ! videoconvert ! video/x-raw,format=BGR ! appsink&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</li>
-<li><p>For generic full frame inference one can use the <code class="docutils literal notranslate"><span class="pre">gvainference</span></code> element. For more information refer <a class="reference external" href="https://github.com/openvinotoolkit/dlstreamer_gst/wiki/gvainference">gvainference</a>.</p>
-<p><strong>Example pipeline to run the PCB classification using gvainference element</strong>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;gstreamer&quot;</span><span class="p">,</span>
-<span class="s2">&quot;pipeline&quot;</span><span class="o">:</span> <span class="s2">&quot;rtspsrc location=\&quot;rtsp://&lt;SOURCE_IP&gt;:&lt;PORT&gt;/&lt;FEED&gt;\&quot; latency=100 ! rtph264depay ! h264parse ! vaapih264dec ! gvainference device=CPU model=common/video/udfs/python/pcb/ref/model_2.xml ! vaapipostproc format=bgrx height=600 width=600 ! videoconvert ! video/x-raw,format=BGR ! appsink&quot;</span><span class="p">,</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p><strong>Note:</strong> When the above pipeline is run, one may not see the PCB defects and bounding boxes since there is no provision to provide a reference image and config ROI(which the PCB classifier expects) with the gvaelements.</p>
-</li>
-</ul>
-<p><strong>Note</strong>:</p>
-<ul>
-<li><p>GVA elements can only be used with <code class="docutils literal notranslate"><span class="pre">gstreamer</span></code> ingestor</p></li>
-<li><p>In case one needs to use CPU/GPU/HDDL device with GVA elements it
-can be set using the device property of gvadetect and gvaclassify elements.
-By default the device property is set to CPU.</p></li>
-<li><p>HDDL daemon needs to be started on the host m/c by following the steps in #Using video accelerators section in <a class="reference external" href="https://github.com/open-edge-insights/eii-core/blob/master/README.md">../../README.md</a>.</p>
-<blockquote>
-<div><p><strong>Example pipeline to run the Safety Gear Detection Sample using GVA plugins on HDDL device</strong>:</p>
-</div></blockquote>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;gstreamer&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;pipeline&quot;</span><span class="o">:</span> <span class="s2">&quot;rtspsrc location=\&quot;rtsp://&lt;SOURCE_IP&gt;:&lt;PORT&gt;/&lt;FEED&gt;\&quot; latency=100 ! rtph264depay ! h264parse ! vaapih264dec ! vaapipostproc format=bgrx ! gvadetect device=HDDL  model=models/frozen_inference_graph.xml ! videoconvert ! video/x-raw,format=BGR ! appsink&quot;</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</li>
-</ul>
+<p><strong>Note:</strong> Please make sure to run <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/docker-compose.yml">docker-compose.yml</a> script after making changes in <a class="reference external" href="https://github.com/open-edge-insights/video-ingestion/blob/master/docker-compose.yml">docker-compose.yml</a></p>
 </div>
 
 

@@ -17,7 +17,6 @@ The provisioning step of EII includes:
 #.	Loading the initial EII ConfigMgr values from a json file.
 #.	Generating EII ConfigMgr user certificates for all applications.
 #.	Generating required X509 certificates and putting them in EII ConfigMgr.
-#.	Joining the node to the EII ConfigMgr cluster.
 
 Generating Keys and Certificates
 --------------------------------

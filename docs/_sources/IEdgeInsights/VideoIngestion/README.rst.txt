@@ -25,8 +25,8 @@ classifier and post-processing UDFs, VI can perform the job of VA(VideoAnalytics
 service also.
 
 
-.. image:: https://github.com/open-edge-insights/video-ingestion/blob/master/img/fig_9_1.png
-   :target: https://github.com/open-edge-insights/video-ingestion/blob/master/img/fig_9_1.png
+.. image:: https://raw.githubusercontent.com/open-edge-insights/video-ingestion/master/img/fig_9_1.png
+   :target: https://raw.githubusercontent.com/open-edge-insights/video-ingestion/master/img/fig_9_1.png
    :alt: Video Ingestion Diagram
 
 

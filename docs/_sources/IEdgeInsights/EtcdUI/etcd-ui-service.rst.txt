@@ -13,8 +13,8 @@ Once EII Configuration Management (ia_etcd) service is successfully up, user can
 * This service can accessed from a remote system at address: https://$(HOST_IP):7071 (when EII is running in secure mode). In this case, CA cert has to be imported in the browser. For insecure mode i.e. DEV mode, it can be accessed at http://$(HOST_IP):7071
 
 
-.. image:: https://github.com/open-edge-insights/eii-etcd-ui/blob/master/img/fig_6_3.png
-   :target: https://github.com/open-edge-insights/eii-etcd-ui/blob/master/img/fig_6_3.png
+.. image:: https://raw.githubusercontent.com/open-edge-insights/eii-etcd-ui/master/img/fig_6_3.png
+   :target: https://raw.githubusercontent.com/open-edge-insights/eii-etcd-ui/master/img/fig_6_3.png
    :alt: ETCD UI Interface
 
 

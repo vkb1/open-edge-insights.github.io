@@ -2,6 +2,14 @@
 Working with Video Data
 ========================
 
+.. include:: ../IEdgeInsights/VideoIngestion/videoingestion-module.rst
+
+.. include:: ../IEdgeInsights/VideoIngestion/configuration.rst
+
+.. include:: ../IEdgeInsights/VideoAnalytics/videoanalytics-module.rst
+
+.. include:: ../IEdgeInsights/VideoAnalytics/configuration.rst
+
 Using video accelerators in ingestion/analytics containers
 ==========================================================
 
@@ -168,15 +176,6 @@ Eg: Mount the two USB cameras connected to the host m/c with device node as ``vi
 
   Upgrade the kernel version to 5.8 and install the required drivers from the below OpenVINO™ link:
   https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_linux.html#additional-GPU-steps
-
-
-.. include:: ../IEdgeInsights/VideoIngestion/videoingestion-module.rst
-
-.. include:: ../IEdgeInsights/VideoIngestion/configuration.rst
-
-.. include:: ../IEdgeInsights/VideoAnalytics/videoanalytics-module.rst
-
-.. include:: ../IEdgeInsights/VideoAnalytics/configuration.rst
 
 User Defined Function (UDF)
 ============================
@@ -740,6 +739,28 @@ Creating UDF in Jupyter Notebook
 #.
   Check the output on the visualizer
 
+.. include:: ../IEdgeInsights/Visualizer/native-visualizer-module.rst
+
+.. include:: ../IEdgeInsights/Visualizer/steps-to-build-and-run-visualizer.rst
+
+.. include:: ../IEdgeInsights/Visualizer/using-labels.rst
+
+.. include:: ../IEdgeInsights/Visualizer/metadata-structure.rst
+
+.. include:: ../IEdgeInsights/WebVisualizer/web-visualizer-module.rst
+
+.. include:: ../IEdgeInsights/WebVisualizer/steps-to-build-and-run-web-visualizer.rst
+
+.. include:: ../IEdgeInsights/WebVisualizer/using-labels.rst
+
+.. include:: ../IEdgeInsights/ImageStore/imagestore-module.rst
+
+.. include:: ../IEdgeInsights/ImageStore/configuration.rst
+
+.. include:: ../IEdgeInsights/InfluxDBConnector/influxdbconnector-module.rst
+
+.. include:: ../IEdgeInsights/InfluxDBConnector/configuration.rst
+
 GigEConfigTool and Export Settings from Basler Pylon Feature System
 ====================================================================
 
@@ -953,84 +974,3 @@ If you want good and bad frames then the query must contain the following parame
     "select * from camera1_stream_results order by desc limit 10"
 
 ----
-
-.. include:: ../IEdgeInsights/Visualizer/native-visualizer-module.rst
-
-.. include:: ../IEdgeInsights/Visualizer/steps-to-build-and-run-visualizer.rst
-
-.. include:: ../IEdgeInsights/Visualizer/using-labels.rst
-
-.. include:: ../IEdgeInsights/Visualizer/metadata-structure.rst
-
-.. include:: ../IEdgeInsights/WebVisualizer/web-visualizer-module.rst
-
-.. include:: ../IEdgeInsights/WebVisualizer/steps-to-build-and-run-web-visualizer.rst
-
-.. include:: ../IEdgeInsights/WebVisualizer/using-labels.rst
-
-.. include:: ../IEdgeInsights/ImageStore/imagestore-module.rst
-
-.. include:: ../IEdgeInsights/ImageStore/configuration.rst
-
-.. include:: ../IEdgeInsights/InfluxDBConnector/influxdbconnector-module.rst
-
-Configuring InfluxDB*
----------------------
-
-The configuration parameters for the 'influxdb' section are:
-
-Influxdb_port
-    The port parameter need not be modified unless the default port for the InfluxDB is changed. 
-
-retention
-    This field signifies the retention duration of the data stored in InfluxDB. The format is in the form of "1h30m5s". It is recommended to keep a retention policy in accordance with the use case and the disk size.
-
-username, password
-    Provides an option to change the default username and password used for accessing the InfluxDB database. 
-
-DBName
-    The default DB name in InfluxDB used for storing the timeseries data is ?datain?. This field can be used to change this default DB name.
-
-ssl
-    When True, use HTTPS instead of HTTP to connect to InfluxDB.
-
-verify_ssl
-    When True, verify SSL certificates for HTTPS requests
-
-InfluxDBConnector Configuration
--------------------------------
-
-All the InfluxDBConnector module configuration is added into EII ConfigMgr (distributed key-value data store) under AppName as mentioned in the environment section of this application's service definition in docker-compose.
-If AppName is InfluxDBConnector, then the application's configuration would look like as below for **/InfluxDBConnector/config** key in EII ConfigMgr:
-
-.. code-block:: 
-
-    "influxdb": {
-        "retention": "1h30m5s",
-        "username": "admin",
-        "password": "admin123",
-        "dbname": "datain",
-        "ssl": "True",
-        "verifySsl": "False",
-        "port": "8086"
-    }
-
-
-For more details on EII ConfigMgr and MessageBus endpoint configuration, visit **EII ConfigMgr_and_MsgBus_Endpoint_Configuration.**
-
-InfluxDBConnector Installation
-------------------------------
-
-#.	Follow **[WORK_DIR]/IEdgeInsights/build/provision/README.md** for EII provisioning if not done already as part of EII stack setup
-#.	Run InfluxDBConnector:
-
-    .. code-block:: 
-
-        $ ./[WORK_DIR]/InfluxDBConnector
-
-    Build and run InfluxDBConnector as a container:
-
-    .. code-block:: 
-
-        $  cd [WORK_DIR]/build
-        $  docker-compose up --build ia_influxdbconnector

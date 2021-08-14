@@ -1,9 +1,6 @@
 
-Sample Python APP for EII platform
+Sample Python App for EII platform
 ==================================
-
-Short Description of App containers
-===================================
 
 This is a sample Python application which demonstrates the usage of EII core libraries like EIIMessageBus and ConfigManager.
 
